@@ -19,7 +19,7 @@ image sofi = im.FactorScale("images/sofi.png", 0.26)
 image breeze = im.FactorScale("images/breeze.png", 0.26)
 
 
-image cc = im.FactorScale("images/sis.png", 0.7)
+image cc = im.FactorScale("images/julie.png", 0.7)
 
 
 
@@ -38,6 +38,10 @@ define train = "sound/youfulca-train-1min.mp3"
 define horror = "youfulca-Horror-ginen_loop.ogg"
 define daily = "sound/youfulca-tea-time_loop.ogg"
 
+define flairtheme = "sound/Flairs_Theme_2_ogg.ogg"
+define guildtheme = "sound/Guild_Theme_ogg.ogg"
+define tomotheme = "sound/Tomos_Theme_ogg.ogg"
+
 
 ###############
 ## Transform ##
@@ -48,9 +52,6 @@ transform sright:
     yanchor 0 ypos 150 xanchor 0.5 xpos 0.8
 transform sleft:
     yanchor 0 ypos 150 xanchor 0.5 xpos 0.2
-
-
-define pushup = PushMove(1.0, "pushup")
 
 transform cutejump:
     linear 0.08 yoffset -100

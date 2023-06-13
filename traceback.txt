@@ -1,30 +1,47 @@
 ﻿I'm sorry, but an uncaught exception occurred.
 
 While running game code:
-  File "game/Scripts/chapter1 pretunnel.rpy", line 16, in script
-    show sofi with cutejump
-Exception: Parameter 'old_widget' is not known by ATL Transform.
+  File "game/Scripts/chapter1 pretunnel.rpy", line 11, in script
+    s "Made it…"
+OSError: Couldn't find file 'Flairs_Theme_2_ogg.ogg'.
 
 -- Full Traceback ------------------------------------------------------------
 
 Full traceback:
-  File "game/Scripts/chapter1 pretunnel.rpy", line 16, in script
-    show sofi with cutejump
-  File "C:\Renpy\renpy-8.0.0-sdk\renpy\ast.py", line 1638, in execute
-    renpy.exports.with_statement(trans, paired=paired)
-  File "C:\Renpy\renpy-8.0.0-sdk\renpy\exports.py", line 1653, in with_statement
-    return renpy.game.interface.do_with(trans, paired, clear=clear)
-  File "C:\Renpy\renpy-8.0.0-sdk\renpy\display\core.py", line 2797, in do_with
-    return self.interact(trans_pause=True,
+  File "game/Scripts/chapter1 pretunnel.rpy", line 11, in script
+    s "Made it…"
+  File "C:\Renpy\renpy-8.0.0-sdk\renpy\ast.py", line 901, in execute
+    renpy.exports.say(who, what, *args, **kwargs)
+  File "C:\Renpy\renpy-8.0.0-sdk\renpy\exports.py", line 1373, in say
+    who(what, *args, **kwargs)
+  File "C:\Renpy\renpy-8.0.0-sdk\renpy\character.py", line 1253, in __call__
+    self.do_display(who, what, cb_args=self.cb_args, dtt=dtt, **display_args)
+  File "C:\Renpy\renpy-8.0.0-sdk\renpy\character.py", line 914, in do_display
+    display_say(who,
+  File "C:\Renpy\renpy-8.0.0-sdk\renpy\character.py", line 653, in display_say
+    rv = renpy.ui.interact(mouse='say', type=type, roll_forward=roll_forward)
+  File "C:\Renpy\renpy-8.0.0-sdk\renpy\ui.py", line 299, in interact
+    rv = renpy.game.interface.interact(roll_forward=roll_forward, **kwargs)
   File "C:\Renpy\renpy-8.0.0-sdk\renpy\display\core.py", line 3376, in interact
     repeat, rv = self.interact_core(preloads=preloads, trans_pause=trans_pause, pause=pause, pause_start=pause_start, **kwargs) # type: ignore
-  File "C:\Renpy\renpy-8.0.0-sdk\renpy\display\core.py", line 3740, in interact_core
-    trans = self.ongoing_transition[None](
-  File "C:\Renpy\renpy-8.0.0-sdk\renpy\atl.py", line 467, in __call__
-    raise Exception('Parameter %r is not known by ATL Transform.' % k)
-Exception: Parameter 'old_widget' is not known by ATL Transform.
+  File "C:\Renpy\renpy-8.0.0-sdk\renpy\display\core.py", line 4096, in interact_core
+    renpy.audio.audio.periodic()
+  File "C:\Renpy\renpy-8.0.0-sdk\renpy\audio\audio.py", line 1166, in periodic
+    raise_(exc[0], exc[1], exc[2])
+  File "/home/tom/ab/renpy-build/tmp/install.linux-x86_64/lib/python3.9/site-packages/future/utils/__init__.py", line 441, in raise_
+  File "C:\Renpy\renpy-8.0.0-sdk\renpy\audio\audio.py", line 1144, in periodic_thread_main
+    periodic_pass()
+  File "C:\Renpy\renpy-8.0.0-sdk\renpy\audio\audio.py", line 1086, in periodic_pass
+    c.periodic()
+  File "C:\Renpy\renpy-8.0.0-sdk\renpy\audio\audio.py", line 517, in periodic
+    topf = load(filename)
+  File "C:\Renpy\renpy-8.0.0-sdk\renpy\audio\audio.py", line 70, in load
+    rv = renpy.loader.load(fn)
+  File "C:\Renpy\renpy-8.0.0-sdk\renpy\loader.py", line 820, in load
+    raise IOError("Couldn't find file '%s'." % name)
+OSError: Couldn't find file 'Flairs_Theme_2_ogg.ogg'.
 
 Windows-10-10.0.19045 AMD64
 Ren'Py 8.0.0.22062402
 Erasers 1.0
-Tue Jun 13 03:03:35 2023
+Tue Jun 13 11:32:19 2023

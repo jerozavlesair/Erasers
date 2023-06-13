@@ -1,5 +1,7 @@
 ﻿label prologue:
     scene black
+    play music tomotheme volume 0.1
+    pause 2
     # Flashback
     centered "Our Story begins during the Dark Ages…"
     centered "Humanity as a species has always tried to find ways to better themselves. \n To overcome the limits of our mortal existence we used our one-of-a-kind intellect to find solutions to out countless problems."
@@ -7,7 +9,7 @@
     centered "But due to the comforts of technology, Humanity's evolution had all been stunted and we eventually became complacent and weak."
     centered "It seemed like all hope was lost, but then came a certain phenomenon that would light the way to a new era:"
     centered "{cps=20}MAGIC{/cps}"
-    centered "Around 20 years ago, people suddenly began to shoot all sorts of stuff out of their hands: {p=0.2}Fire, {p=0.2}Ice, {p=0.2}Lightning, {p=0.2}you name it, someone could probably use it."
+    centered "Around 20 years ago, people suddenly began to shoot all sorts of stuff out of their hands: {p=0.5}Fire, {p=0.2}Ice, {p=0.2}Lightning, {p=0.5}you name it, someone could probably use it."
     centered "And not only that, we could cure diseases and build new industries we couldn't do before with science."
     centered "With Magic, society could finally push forward into a new Golden Age of advancement!"
     centered "Of course, with new stuff, there were always naysayers who would say no to cool new stuff."

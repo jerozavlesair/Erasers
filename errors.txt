@@ -2,9 +2,8 @@
 errors listed below, and try again.
 
 
-File "game/Scripts/chapter1 pretunnel.rpy", line 19: expected 'comma or end of line' not found.
-    with easeinright
-    ^
+File "game/definition.rpy", line 22: is not terminated with a newline. (Check strings and parenthesis.)
+    image cc = im.FactorScale("images/julie.png", 0.875
 
 Ren'Py Version: Ren'Py 8.0.0.22062402
-Tue Jun 13 03:10:16 2023
+Tue Jun 13 11:37:16 2023

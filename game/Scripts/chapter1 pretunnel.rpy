@@ -5,7 +5,7 @@ label pretunnel:
     scene bg_cafe
     show white:
         alpha 0.5
-    play music daily fadein 2.0 volume 0.2
+    play music flairtheme fadein 2.0 volume 0.2
     pause(0.5)
     show sofi at scenter with easeinbottom
     s "Made it…"
@@ -15,7 +15,7 @@ label pretunnel:
     s "Scan your surroundings."
     s "Keep an eye out for any suspicious individuals because you never know when someone could drop on you and-"
     show cc with easeinright:
-        yanchor 0 ypos 120 xanchor 0.5 xpos 2400
+        yanchor 0 ypos 50 xanchor 0.5 xpos 2400
 
     cc "Hello Ma’am, can I take your order?"
     show sofi at test1
@@ -45,6 +45,7 @@ label pretunnel:
     s "Maybe it was a mistake to come here in the first place."
     s "I felt so hyped about it earlier, but now that I'm actually on an assignment…"
     s "It's kinda scary."
+    with hpunch
     s "I mean… I'm not built for this kind of work!"
     s "I was just someone who worked at a media company up until a few months ago! I wasn’t even an actual journalist, I was just the glorified intern! I don’t think my bosses even knew my name!"
     s "Hell, I had to take a side gig as a freelance storyteller just to pay my rent!"
@@ -114,13 +115,14 @@ label pretunnel:
     u "Good."
     u "Now let's go to the Real Rendezvous point and discuss our mission there."
     s "Real rendezvous point?"
-
+    stop music fadeout 1.0
     ############################################################################
 
     ## The Real Rendezvous Point
     ## EXT. Unisex Bathroom
     scene black with pixellate
     scene white with zoomin
+    play music guildtheme fadein 2.0 volume 0.2
     s "THIS IS A BATHROOM!"
     u "Yeah, it is."
     s "AND YOU THINK IT WAS A GOOD IDEA TO DRAG ME IN HERE WITH YOU!?"
