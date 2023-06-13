@@ -15,7 +15,7 @@ label pretunnel:
     s "Scan your surroundings."
     s "Keep an eye out for any suspicious individuals because you never know when someone could drop on you and-"
     show cc with easeinright:
-        yanchor 0 ypos 50 xanchor 0.5 xpos 2400
+        yalign 1.0 xanchor 0.5 xpos 2400
 
     cc "Hello Ma’am, can I take your order?"
     show sofi at test1

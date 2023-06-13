@@ -1,7 +1,7 @@
 ﻿label prologue:
     scene black
     play music tomotheme volume 0.1
-    pause 2
+    pause 1
     # Flashback
     centered "Our Story begins during the Dark Ages…"
     centered "Humanity as a species has always tried to find ways to better themselves. \n To overcome the limits of our mortal existence we used our one-of-a-kind intellect to find solutions to out countless problems."

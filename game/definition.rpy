@@ -19,7 +19,7 @@ image sofi = im.FactorScale("images/sofi.png", 0.26)
 image breeze = im.FactorScale("images/breeze.png", 0.26)
 
 
-image cc = im.FactorScale("images/julie.png", 0.7)
+image cc = im.Flip(im.FactorScale("images/cc-temp.png", 1.5), horizontal=True)
 
 
 
